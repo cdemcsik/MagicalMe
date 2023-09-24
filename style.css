@@ -1,0 +1,195 @@
+body {
+  background-color: pink;
+  font-family: Futura;
+  margin:2rem auto;
+  max-width: 82rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 7rem;
+  font-family: Futura;
+  font-weight: 110;
+}
+section {
+  display: flex;
+ 
+  }
+ 
+  h2{
+    color:black;
+    font-family: Monospace;
+    text-align:center;
+    font-size:4rem;
+  background-image:linear-gradient (90deg, rgba(0,0,0,0), rgba(0,0,2,1));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+      animation:gradient 12s  ease infinite;
+  }
+  
+  @keyframes gradient {
+    0%{
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100{
+      background-position: 0% 50%;
+    }
+  }
+  
+  /*https://codingartistweb.com/2020/01/gold-text-effect-css-text-effect/*/
+  .gold{
+    // letter-spacing: 5px;
+    background-image: linear-gradient(
+    to right,
+     #462523 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%
+  );
+    
+    color:transparent;
+    -webkit-background-clip:text;
+  }  
+  
+  .author {
+    text-align:center;
+    padding: 0px 50px;
+    margin: 0px 50px;
+    //border-radius: 100%;
+    //background: #f6e27a;
+    color: #f6e27a;
+    //height: 75px;
+    //width: 75px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .speaker {
+    text-align:center;
+    padding: 0px 50px;
+    margin: 0px 50px;
+      color: green;
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .givingback {
+    text-align:center;
+    padding: 0px 50px;
+    margin:0px 50px;
+  
+    color: #e3e3e3;
+  
+  
+    position: relative;
+    display: inline-block;
+    
+    }
+  
+  /*https://www.w3schools.com/css/css_tooltip.asp*/
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #9266CC;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-indez: 1;
+    top: 125px;
+   
+     
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  /*https://www.w3schools.com/cssref/sel_hover.asp*/
+   .author:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .speaker:hover .tooltiptext{
+   visibility: visible;
+    opacity:1;
+    
+  }     
+    
+  .givingback:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    
+  }
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -3px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #9266CC transparent transparent;
+    
+  }
+  /*Custom Cursor Images https://codepen.io/fmressel/pen/djwvJV Search for Unicode using https://emojipedia.org/ and replace characters before .png*/
+  
+  /*party*/ 
+  .party {
+    cursor: 
+      url(https://abs.twimg.com/emoji/v2/72x72/1f389.png)
+      36 36, auto;
+  }
+  /*flower*/
+  .flower {
+    cursor:
+      url(https://abs.twimg.com/emoji/v2/72x72/1f940.png)
+      36 36, auto;
+  }
+  
+  /*bear*/
+  .bear{
+    cursor:
+      url(https://abs.twimg.com/emoji/v2/72x72/1f9f8.png)
+      36 36, auto;
+  }
+  
+  .column {
+    float:left;  
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear:both;
+     }
+  
+  a {
+    
+     color: #dd22dd;
+  }
+  button {
+    background-color: #FFOOFF;; /*Fuchsia */
+    border: dotted ;
+    color:Chartreuse;
+    padding:15px 32px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    
+  }
+section figure{
+position: sticky;
+  top: 3rem;
+}
